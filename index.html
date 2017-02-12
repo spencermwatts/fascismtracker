@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>a quick-reference guide to your fascist state</title>
+    <title>an abbreviated guide to fascism</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,6 +13,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
+            $("[rel=tooltip]").tooltip({html:true});
         });
     </script>
 </head>
@@ -138,6 +139,35 @@
             margin: 1em;
         }
 
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        a:hover {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        .yes-box+.tooltip>.tooltip-inner {
+            background-color: red;
+            color: #FFFFFF;
+            border: 1px solid red;
+        }
+
+        .no-box+.tooltip>.tooltip-inner {
+            background-color: green;
+            color: #FFFFFF;
+            border: 1px solid green;
+        }
+
+        .no-box+.tooltip>.tooltip-arrow {
+            opacity: 0;
+        }
+
+        .yes-box+.tooltip>.tooltip-arrow {
+            opacity: 0;
+        }
     </style>
 
     <script>
@@ -192,7 +222,7 @@
                             <div class="descriptions" style="width:20em"></div>
                         </th>
                         <td>
-                            <img class="img-responsive flags" src="assets/usa.png" >
+                            <img class="img-responsive flags" src="assets/usa.png">
                             <div class="yeartext">2017-Present</div>
                         </td>
                         <td>
@@ -200,14 +230,17 @@
                             <div class="yeartext">2009-2017</div>
                         </td>
                         <td>
-                          <img class="img-responsive flags" src="assets/turkey.png">
-                          <div class="yeartext">2014-Present</div>                        </td>
+                            <img class="img-responsive flags" src="assets/turkey.png">
+                            <div class="yeartext">2014-Present</div>
+                        </td>
                         <td>
-                          <img class="img-responsive flags" src="assets/uk.png">
-                          <div class="yeartext">2016-Present</div>                        </td>
+                            <img class="img-responsive flags" src="assets/uk.png">
+                            <div class="yeartext">2016-Present</div>
+                        </td>
                         <td>
-                          <img class="img-responsive flags" src="assets/china.png">
-                          <div class="yeartext">2012-Present</div>                        </td>
+                            <img class="img-responsive flags" src="assets/china.png">
+                            <div class="yeartext">2012-Present</div>
+                        </td>
                         <td>
                             <img class="img-responsive flags" src="assets/nazi.png">
                             <div class="yeartext">1933-1945</div>
@@ -228,28 +261,28 @@
                             <div class="descriptions">Elected leaders who appeal to the ignorance and prejudices of a society which believes itself to be a victim of a crisis which no traditional solution (including existing politicians and gov’t) can resolve.</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://time.com/4375262/history-demagogues-donald-trump/">yes</a></div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
-                        </td>
-                        <td>
-                            <div class="text no">no</div>
-                        </td>
-                        <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="">maybe</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text maybe"><a href="https://www.ft.com/content/ebcc4c56-d5b4-11e6-944b-e7eb37a6aa8e">maybe</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://www.nytimes.com/2016/09/28/books/hitler-ascent-volker-ullrich.html">yes</a></div>
+                        </td>
+                        <td>
+                            <div class="text yes"><a href="">yes</a></div>
+                        </td>
+                        <td>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
 
                     </tr>
@@ -261,28 +294,28 @@
                             </div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://en.wikipedia.org/wiki/Make_America_Great_Again">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="http://foreignpolicy.com/2016/10/23/turkeys-religious-nationalists-want-ottoman-borders-iraq-erdogan/">maybe</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.newyorker.com/news/daily-comment/a-perilous-nationalism-at-brexit">yes</a></div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text no"><a href="">no</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.bbc.co.uk/education/guides/zqyrcdm/revision">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="">maybe</a></div>
                         </td>
 
                     </tr>
@@ -293,28 +326,28 @@
                                 executive powers.</div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="http://www.cnn.com/2017/01/16/opinions/trump-following-authoritarian-playbook-ben-ghiat/">maybe</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://www.theatlantic.com/international/archive/2016/07/how-erdogan-made-turkey-authoritarian-again/492374/">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.nytimes.com/ref/college/coll-china-politics.html">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://www.ushmm.org/wlc/en/article.php?ModuleId=10005204">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
 
                     </tr>
@@ -324,28 +357,28 @@
                             <div class="descriptions">Personal, charismatic, and often authoritarian style of command; value placed on the leader’s “instincts” over critical reasoning.</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://www.theatlantic.com/science/archive/2016/10/why-people-fall-for-charismatic-leaders/503906/">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://hbr.org/2009/01/the-nature-of-obamas-charismat">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
-                        </td>
-                        <td>
-                            <div class="text no">no</div>
+                            <div class="text yes"><a href="http://www.aljazeera.com/indepth/spotlight/turkeyelection/2011/05/2011526121054590355.html">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.bbc.com/news/magazine-20237437">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
+                        </td>
+                        <td>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
 
                     </tr>
@@ -355,7 +388,7 @@
                             <div class="descriptions">Focus on machismo, authority of male leaders, male dominance.</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://edition.cnn.com/2016/12/13/politics/donald-trump-cabinet-diversity/">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
@@ -370,10 +403,10 @@
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
                             <div class="text maybe">??</div>
@@ -386,28 +419,28 @@
                             <div class="descriptions">Belief that violence is an effective tool towards achieving an end; often accompanied with the <a href="#" data-toggle="tooltip" data-placement="top" title="An obsession and idealization of an object or concept that goes exceeds that object's or concept's function.">fetishization</a>                                of violence.</div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="https://www.washingtonpost.com/news/post-politics/wp/2015/11/22/black-activist-punched-at-donald-trump-rally-in-birmingham/?utm_term=.ab25723814c9">maybe</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="">maybe</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
                             <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text yes"><a href="http://www.annefrankguide.net/en-US/bronnenbank.asp?oid=18587">yes</a></div>
                         </td>
                         <td>
                             <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text no">yes</div>
-                        </td>
-                        <td>
-                            <div class="text no">yes</div>
+                            <div class="text yes">yes</div>
                         </td>
                     </tr>
                     <tr>
@@ -429,13 +462,13 @@
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.jstor.org/stable/pdf/2657608.pdf?seq=1#page_scan_tab_contents">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
@@ -447,7 +480,7 @@
                             <div class="descriptions">Impede critical reasoning using simple vocabulary and syntax to obfuscate, distract, and mislead; equation of disagreement to treason.</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.cnn.com/2017/01/22/politics/kellyanne-conway-alternative-facts/">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
@@ -459,10 +492,10 @@
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text maybe">maybe</div>
+                            <div class="text maybe"><a href="http://blogs.wsj.com/chinarealtime/2014/03/31/chinese-lessons-decoding-cctv-newspeak/">maybe</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
                             <div class="text maybe">??</div>
@@ -478,25 +511,25 @@
                                 anti-Semitism, racism.</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="https://www.bostonglobe.com/opinion/editorials/2017/02/02/immigrants-trump-all-purpose-scapegoats/PMluPveaqfV13qh8VZkPtJ/story.html">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://foreignpolicy.com/2016/03/18/erdogans-war-turkey-terrorism-kurds-pkk-isis/">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://blogs.lse.ac.uk/politicsandpolicy/how-foreigners-became-the-convenient-scapegoat-of-the-referendum-campaign/">yes</a></div>
                         </td>
                         <td>
                             <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="http://www.annefrankguide.net/en-US/bronnenbank.asp?oid=15977">yes</a></div>
                         </td>
                         <td>
-                            <div class="text yes">yes</div>
+                            <div class="text yes"><a href="">yes</a></div>
                         </td>
                         <td>
                             <div class="text maybe">??</div>
@@ -522,8 +555,8 @@
 
                     <blockquote>[a] form of political behavior marked by obsessive preoccupation with community decline, humiliation or victimhood and by compensatory cults of unity, energy and purity, in which a mass-based party of committed nationalist militants,
                         working in uneasy but effective collaboration with traditional elites, abandons democratic liberties and pursues with redemptive violence and without ethical or legal restraints [...].</blockquote>
-                    <br> This interpretation exists beside countless other attempts to clearly define fascism. There is no simple checklist nor threshold which allows us to classify one group as fascist and another not. In many ways, our folk definition of
-                    fascism amounts to little more than "<a href="https://en.wikipedia.org/wiki/Jacobellis_v._Ohio">I know it when I see it</a>,” where the sum of the parts amounts to something more sinister than its individual components.
+                    <br> This interpretation exists beside countless other attempts to clearly define fascism. There is no simple checklist nor threshold which allows us to classify one group as fascist and another not. In many ways, our folk definition
+                    of fascism amounts to little more than "<a href="https://en.wikipedia.org/wiki/Jacobellis_v._Ohio">I know it when I see it</a>,” where the sum of the parts amounts to something more sinister than its individual components.
                     <br><br> With this impreciseness in mind, you will find the qualities listed in the left-most column above comprise only a small sample of what fascism can be. This list is by no means authoritative or comprehensive and serves only
                     as a (flawed) lens through which we may critically examine the power structures within which we endure.
 
@@ -554,9 +587,9 @@
 
 
 
-                      This report examines the ruling party and its associated elements and movements within the given country and does not report on smaller, non-mainstream fascist movements which exist in every society.
+                      This report examines the ruling party and its associated elements, ignoring any non-mainstream fascist movements (which exist in every society).
 <br><br>
-                      Additionally, this report does not aim to say if a given society or leader is fascist; it simply states if a given power possesses a fascist trait. A power structure can possess fascist traits without being fascist; a leader’s style can mirror that of Hitler or Mussolini, but that leader’s underlying ideology may differ vastly and be labeled accordingly. Such categorizations (both distinct from and compatible with fascism) may include <a href="https://www.project-syndicate.org/onpoint/is-fascism-back-by-robert-o--paxton-2016-01">religious fanaticism, reactionary anarchism, self-indulgent demagoguery</a>, among others.</span>
+                      Additionally, this report does not aim to say if a given society or leader is fascist; it simply states if a given power possesses a fascist trait. A power structure can possess fascist traits without being fascist; a leader’s style can mirror that of Hitler or Mussolini, but that leader’s ideology may differ vastly from fascism. Such categorizations (both distinct from and compatible with fascism) may include <a href="https://www.project-syndicate.org/onpoint/is-fascism-back-by-robert-o--paxton-2016-01">religious fanaticism, reactionary anarchism, self-indulgent demagoguery</a>, among others.</span>
                 </div>
             </div>
 
