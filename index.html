@@ -16,7 +16,12 @@
         });
     </script>
 </head>
+<!-- TODO:
 
+
+
+https://en.wikipedia.org/wiki/File:Flag_of_Spain_(1977_-_1981).svg
+ -->
 
 <body>
 
@@ -42,16 +47,15 @@
             font-family: 'Cutive Mono', monospace;
             text-align: center;
             /*margin-left: 2em;*/
-            padding-left:4em;
+            padding-left: 4em;
             overflow-x: auto;
             word-wrap: break-word;
             /*margin-left: 1em;*/
             margin-bottom: 3em;
-            table-layout: fixed
-            align-items: center;
+            table-layout: fixed align-items: center;
             align-content: center;
             vertical-align: middle;
-
+            width: 100%;
         }
 
         .table td {
@@ -62,7 +66,6 @@
             margin-right: 75px;
             min-width: 10em;
             max-width: 10em;
-
             /*padding-bottom: 3em;*/
         }
 
@@ -76,12 +79,12 @@
             font-family: 'Cutive Mono', monospace;
             font-weight: 10;
             vertical-align: middle;
-;
-
-            margin: 100px;
+            /*width: 200px;*/
+            /*margin: 100px;*/
             /*min-width: 100px;
             max-width: 100px;*/
             /*padding-right: 100px;*/
+            -- fairfield new jersey -- 973-461-1550 -- hds 3666533
         }
 
         .container-fluid {
@@ -90,18 +93,19 @@
 
         .text {
             font-family: 'Cutive Mono', monospace;
-            /*font-weight: 800;*/
+            font-weight: 100;
             font-size: 1.5em;
             text-align: right;
             word-wrap: break-word;
             vertical-align: middle !important;
             line-height: 1;
+        }
 
-        }
         .span {
-            display:table-cell;
-            vertical-align:middle;
+            display: table-cell;
+            vertical-align: middle;
         }
+
         .yeartext {
             font-size: 1em;
             text-align: center;
@@ -110,38 +114,37 @@
         .descriptions {
             font-size: 1em;
             text-align: right;
+            font-weight: 400;
             line-height: 1;
+            margin-top: 1em;
         }
 
-        .YES {
+        .yes {
             color: white;
             text-align: center;
             background: red;
             text-transform: uppercase;
             font-size: 2em;
-
         }
 
-        .NO {
+        .no {
             color: green;
             text-align: center;
             text-transform: uppercase;
             font-size: 2em;
-
         }
 
-        .MAYBE {
+        .maybe {
             color: orange;
             text-align: center;
             text-transform: uppercase;
             font-size: 2em;
-
             ;
         }
 
         .flags {
-            width: 75%;
-            display: block;
+            width: 6em;
+            /*display: block;*/
             margin-left: auto;
             margin-right: auto;
         }
@@ -150,9 +153,17 @@
             margin: 1em;
         }
     </style>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
     <div class="container-fluid">
         <div class="col-lg-12 title " style="margin-left:0px">fascist.report</div>
-        <div class="col-lg-12 subtitle " style="margin-top:50px"><a href="/text.html">What characteristics do your national government and fascism share?</a></div>
+        <div class="col-lg-12 subtitle " style="margin-top:50px">How do various governments track on fascist characteristics?</div>
     </div>
 
     <div class="col-lg-12">
@@ -162,367 +173,350 @@
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
-                        <th style="font-size:.8em; text-align:left;"></th>
+                        <th style="font-size:.8em; "></th>
                         <th>
-                            Trump
+                            Trump<br>(USA)
                         </th>
                         <th>
-                            Obama
+                            Obama<br>(USA)
                         </th>
                         <th>
-                            Greece
+                            Erdoğan<br>(Turkey)
                         </th>
                         <th>
-                            Nazi Germany
+                            May<br>(UK)
                         </th>
                         <th>
-                            Mussolini's Italy
+                            Xi<br>(China)
                         </th>
                         <th>
-                            Franco's Spain
+                            Hitler<br>(Germany)
                         </th>
-
+                        <th>
+                            Mussolini<br>(Italy)
+                        </th>
+                        <th>
+                            Pinochet<br>(Chile)
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th><div class="descriptions">a sampling of characteristics of fascism can be found listed below:</div> </th>
+                        <th>
+                            <div class="descriptions" style="width:20em"></div>
+                        </th>
                         <td>
-                            <img class="img-responsive flags" src="assets/usa.png">
-                            <div class="yeartext">2009-2017</div>
+                            <img class="img-responsive flags" src="assets/usa.png" >
+                            <div class="yeartext">2017-Present</div>
                         </td>
                         <td>
                             <img class="img-responsive flags" src="assets/usa.png">
                             <div class="yeartext">2009-2017</div>
                         </td>
                         <td>
-                            <img class="img-responsive flags" src="assets/nazi.png">
-                            <div class="yeartext">2009-2017</div>
-                        </td>
+                          <img class="img-responsive flags" src="assets/turkey.png">
+                          <div class="yeartext">2014-Present</div>                        </td>
+                        <td>
+                          <img class="img-responsive flags" src="assets/uk.png">
+                          <div class="yeartext">2016-Present</div>                        </td>
+                        <td>
+                          <img class="img-responsive flags" src="assets/china.png">
+                          <div class="yeartext">2012-Present</div>                        </td>
                         <td>
                             <img class="img-responsive flags" src="assets/nazi.png">
-                            <div class="yeartext">2009-2017</div>
+                            <div class="yeartext">1933-1945</div>
                         </td>
                         <td>
-                            <img class="img-responsive flags" src="assets/nazi.png">
-                            <div class="yeartext">2009-2017</div>
+                            <img class="img-responsive flags" src="assets/italy.png">
+                            <div class="yeartext">1922-1943</div>
                         </td>
                         <td>
-                            <img class="img-responsive flags" src="assets/franco_spain.png">
-                            <div class="yeartext">2009-2017</div>
+                            <img class="img-responsive flags" src="assets/chile.png">
+                            <div class="yeartext">1973-1990</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="text">Demagogic populism</div>
+                            <div class="descriptions">Elected leaders who appeal to the ignorance and prejudices of a society which believes itself to be a victim of a crisis which no traditional solution (including existing politicians and gov’t) can resolve.</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">maybe</div>
+                        </td>
+                        <td>
+                            <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">maybe</div>
+                        </td>
+                        <td>
+                            <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
                         </td>
 
                     </tr>
                     <tr>
                         <td>
                             <div class="text">Ultra-nationalism</div>
-                              <div class="descriptions">The need for a society to reform after a period of perceived degeneration and decay; to return to a “golden age.”</div>
-
+                            <div class="descriptions">
+                                Longing for society to return to a “golden age” after a period of perceived degeneration and decay; lust after a self-determined state free of external influences; the creation of a more “pure” society.
+                            </div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text maybe">maybe</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text maybe">maybe</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">maybe</div>
                         </td>
 
                     </tr>
                     <tr>
                         <td>
-                          <div class="text">Charismatic leadership</div>
+                            <div class="text">Authoritarianism</div>
+                            <div class="descriptions">Constraints on political opponents & anti-regime movements, incl. limited representation of diverse interests in gov’t; regime’s legitimacy stems from its claimed necessity in fighting societal problems; vague and undefined
+                                executive powers.</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">maybe</div>
+                        </td>
+                        <td>
+                            <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="text">Charismatic leadership</div>
                             <div class="descriptions">Personal, charismatic, and often authoritarian style of command; value placed on the leader’s “instincts” over critical reasoning.</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                          <div class="text">Emphasis on masculinity</div>
-                            <div class="descriptions">Focus on machismo, authority of male leaders, focus on male dominance in societal relations.</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">MAYBE</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
+                            <div class="text yes">yes</div>
                         </td>
 
                     </tr>
                     <tr>
                         <td>
-                          <div class="text">Fetishization of violence</div>
-                            <div class="descriptions">Belief that violence is an effective tool towards achieving a group’s success.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text">Emphasis on masculinity</div>
+                            <div class="descriptions">Focus on machismo, authority of male leaders, male dominance.</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                          <div class="text">Militarization</div>
-                            <div class="descriptions">The militarization of domestic politics; shift towards militaristic imagery and symbolism.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
+                            <div class="text maybe">??</div>
                         </td>
 
                     </tr>
                     <tr>
                         <td>
-                          <div class="text">Cororatism</div>
-                            <div class="descriptions">The re-organization of labor and industry under the auspices of the state; sometimes a quest for autarky.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text">Reverence of violence</div>
+                            <div class="descriptions">Belief that violence is an effective tool towards achieving an end; often accompanied with the <a href="#" data-toggle="tooltip" data-placement="top" title="An obsession and idealization of an object or concept that goes exceeds that object's or concept's function.">fetishization</a>                                of violence.</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text maybe">maybe</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
+                            <div class="text maybe">maybe</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          <div class="text">Newspeak and equivocation</div>
-                            <div class="descriptions">Using simple vocabulary and syntax to obfuscate or distract from critical reasoning and understanding.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text no">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">yes</div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                          <div class="text">Exaltation of youth</div>
-                            <div class="descriptions">Heavily valuing the youth of a state as agents of change; framing youth victims of generational conflict.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text">Corporatism</div>
+                            <div class="descriptions">Re-organization of labor and industry under the auspices of the state; attempt to achieve <a href="#" data-toggle="tooltip" data-placement="top" title="A state's complete economic independence from other states.">autarky</a>.
+                                Not the protection of private corporate interests.</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          <div class="text">Fear of a degenerate other </div>
-                            <div class="descriptions">Fear of difference, dread of the decline of the dominant group’s standing. Often manifested as xenophobia, anti-Semitism, racism.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">no</div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                          <div class="text">Equating disagreement to treason</div>
-                            <div class="descriptions">Framing differences in perspective or opinion as grave threats to a state or social group’s existence.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
+                            <div class="text">Newspeak and equivocation</div>
+                            <div class="descriptions">Impede critical reasoning using simple vocabulary and syntax to obfuscate, distract, and mislead; equation of disagreement to treason.</div>
                         </td>
                         <td>
-                            <div class="text YES">YES</div>
+                            <div class="text yes">yes</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">MAYBE</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text MAYBE">UNCLEAR</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text no">no</div>
                         </td>
                         <td>
-                            <div class="text NO">NO</div>
+                            <div class="text maybe">maybe</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">??</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">??</div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                          <div class="text">Populist appeals to social frustrations</div>
-                            <div class="descriptions">Appeal to a frustrated middle class suffering from feelings of social humiliation, often as a result of social and economic success of other groups; believe that one’s own group is a victim of a crisis lacking a traditional solution.
+                            <div class="text">Scapegoating</div>
+                            <div class="descriptions">Dread of the decline of the dominant group’s standing; obsession with national security. Fear of difference manifested as classism, <a href="#" data-toggle="tooltip" data-placement="top" title="Intense hatred/fear of people from other countries than oneself">xenophobia</a>,
+                                anti-Semitism, racism.</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text no">no</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text yes">yes</div>
+                        </td>
+                        <td>
+                            <div class="text maybe">??</div>
+                        </td>
+                    </tr>
 
-</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">MAYBE</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          <div class="text">Emphasis on aesthetics</div>
-                            <div class="descriptions">Focus on “political choreography,” romantic, ritualistic, and even occult components of government as relates to society.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">MAYBE</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          <div class="text">The rejection of modern social movements, economic and power structures</div>
-                            <div class="descriptions">Spurning of liberalism, communism, and conservatism; temporary association between fascist groups and any of the above may occur for political gain.</div>                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text YES">YES</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">MAYBE</div>
-                        </td>
-                        <td>
-                            <div class="text MAYBE">UNCLEAR</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                        <td>
-                            <div class="text NO">NO</div>
-                        </td>
-                    </tr>
 
                 </tbody>
             </table>
@@ -535,15 +529,15 @@
                 <div class="row-fluid">
                     <span class="text"><br>
 
-                  <b> <span class="YES"> <i>tl;dr</i>: A lot of things can be fascism.</span></b>
+                  <b> <span class="yes">fascism = authoritarianism + nationalism + populism.</span></b>
                     <br><br><br>--------<br>
-                    <br> In <i><a href="http://www.penguinrandomhouse.com/books/128540/the-anatomy-of-fascism-by-robert-o-paxton/9781400033911/">The Anatomy of Fascism</a></i>, Robert O. Paxton defines fascism as
+                    <br> In <i><a href="http://www.penguinrandomhouse.com/books/128540/the-anatomy-of-fascism-by-robert-o-paxton/9781400033911/">The Anatomy of Fascism</a></i>, Robert Paxton defines fascism as
                     <br><br>
 
                     <blockquote>[a] form of political behavior marked by obsessive preoccupation with community decline, humiliation or victimhood and by compensatory cults of unity, energy and purity, in which a mass-based party of committed nationalist militants,
-                        working in uneasy but effective collaboration with traditional elites, abandons democratic liberties and pursues with redemptive violence and without ethical or legal restraints goals of internal cleansing and external expansion.</blockquote>
-                    <br> This interpretation exists beside countless other attempts to clearly define fascism. There is no simple checklist nor threshold which allows us to classify one group fascist and another not. In may ways, our folk definition of
-                    fascism amounts to little more than "<a href="https://en.wikipedia.org/wiki/Jacobellis_v._Ohio">I know it when I see it</a>,” in which we can tell once the sum of the parts amounts to something more sinister than its individual components.
+                        working in uneasy but effective collaboration with traditional elites, abandons democratic liberties and pursues with redemptive violence and without ethical or legal restraints [...].</blockquote>
+                    <br> This interpretation exists beside countless other attempts to clearly define fascism. There is no simple checklist nor threshold which allows us to classify one group as fascist and another not. In many ways, our folk definition of
+                    fascism amounts to little more than "<a href="https://en.wikipedia.org/wiki/Jacobellis_v._Ohio">I know it when I see it</a>,” where the sum of the parts amounts to something more sinister than its individual components.
                     <br><br> With this impreciseness in mind, you will find the qualities listed in the left-most column above comprise only a small sample of what fascism can be. This list is by no means authoritative or comprehensive and serves only
                     as a (flawed) lens through which we may critically examine the power structures within which we endure.
 
@@ -557,7 +551,7 @@
                 <div class="row-fluid">
                     <span class="text" style="text-align:center; padding:0em;"><br>
 
-                      <b> <span class="YES"><i>tl;dr</i>: Fascism poses a great risk to your physical well-being and your personal liberties.</span> </b>
+                      <b> <span class="yes">Fascism poses a great risk to your personal liberties and physical well-being</span> </b>
                     <br><br>--------<br><br>
 
                     <b>Identifying fascist characteristics of power structures within which we exist empowers individuals with an increased awareness of potential risks to personal liberty and physical well-being.</b> Fascist moments have led to incredible
@@ -586,14 +580,14 @@
     <!-- <span class="title">This span text in "a" element should be red too</span> -->
 
     <div class="container-fluid">
-        <div class="col-lg-12 subtitle " style="font-size:2em; text-align:center">criticisms, suggestions, questions?</div>
+        <div class="col-lg-12 subtitle " style="font-size:2em; text-align:center">Send feedback, questions, and suggested edits to</div>
         <div class="col-lg-12 text" style="font-size:1.5em; text-align:center"><a href="mailto:fascist.report@gmail.com?subject=feedback">fascist.report@gmail.com</a></div>
 
-        <div class="col-lg-12 text" style="font-size:2.5em; text-align:center; margin-top:2em;">
+        <div class="col-lg-12 text" style="font-size:2.5em; text-align:center; margin-top:1em;">
 
             <form action="//report.us15.list-manage.com/subscribe/post?u=5c98eaabf61fe65e73f24b070&amp;id=3a926c73ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll" style="font-size:.5em">
-                    <span>subscribe for updates to the report</span>
+                <div id="mc_embed_signup_scroll" style="font-size:.5em; margin:2em;">
+                    <span>Subscribe for updates to the report.</span>
                     <div class="mc-field-group">
                         <label for="mce-EMAIL">Email Address </label>
                         <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -603,7 +597,7 @@
                         </div>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5c98eaabf61fe65e73f24b070_3a926c73ab" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="clear" style="margin:1em;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                     </div>
                 </div>
 
